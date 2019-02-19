@@ -1,0 +1,18 @@
+commit 4926dcb372696e504aa4226c3ee7e52f48304c43 (HEAD -> master)
+Author: ValentinDutin <valentin.dutin@gmail.com>
+Date:   Tue Feb 19 18:41:09 2019 +0300
+
+    Updated status.txt
+
+commit 8c2b7a7cbb685a416f454eae07e55d188a54bb95
+Author: ValentinDutin <valentin.dutin@gmail.com>
+Date:   Tue Feb 19 18:39:03 2019 +0300
+
+    Updated .gitignore
+
+commit eb2c8d4839f1c4f35f107cf451b09a11233c39e6 (origin/master)
+Author: ValentinDutin <valentin.dutin@gmail.com>
+Date:   Tue Feb 12 19:56:01 2019 +0300
+
+    Git ignore added
+
