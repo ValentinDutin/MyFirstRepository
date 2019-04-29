@@ -1,6 +1,6 @@
 var photoPosts = [
     {
-       id: "1",
+        id: "1",
         description: "Лето где-то рядом",
         createdAt: new Date("2018-02-23T23:00:00"),
         author: "valentin_dutin",
@@ -198,10 +198,12 @@ function getPhotoPosts(skip){
     return getPhotoPosts(skip, 10);
 }
 function getPhotoPosts(){
+    alert("It works");
     return getPhotoPosts(0, 10);
 }
 function getPhotoPost(id){
-    photoPosts.sort(compareByDate).foreach(function(item){
+    photoPosts.sort(compareByDate);
+    photoPosts.foreach(function(item){
         if(item.id == id){
             return item;
         }
@@ -219,7 +221,9 @@ function getPhotoPosts(skip, top){
         top = photoPosts.size() - skip;
     }
     resultArr = [];
-    return photoPosts.sort(compareByDate).slice(skip, top + skip);
+    resultArr = photoPosts;
+    resultArr.sort(compareByDate);
+    return resultArr.slice(skip, top + skip);
 }
 
 function getPhotoPosts(skip, top, filterConfig){
@@ -232,9 +236,14 @@ function getPhotoPosts(skip, top, filterConfig){
     if(skip + top >= photoPosts.length){
         top = photoPosts.size() - skip;
     }
+    if(filterConfig.createdAt == undefined ||
+        filterConfig.author === undefined ||
+        filterConfig.hashtag === undefined){
+        return null;
+    }
     resultArr = [];
-    var count = 0;
-    photoPosts.sort(compareByDate).foreach(function(item){
+    photoPosts.sort(compareByDate);
+    photoPosts.foreach(function(item){
         if(item.createdAt == filterConfig.createdAt ||
         item.author == filterConfig.author){
             resultArr.push(item);
@@ -250,7 +259,6 @@ function getPhotoPosts(skip, top, filterConfig){
 }
 function validatePhotoPost(photoPost){
     if(photoPost.id == null){
-    console.log("Error!");
         return false;
     }
     if(photoPost.description == null ||
@@ -297,5 +305,4 @@ function editPhotoPost(id, photoPost){
         post.hashtag = photoPost.hashtag;
     }
 }
-
 }());
