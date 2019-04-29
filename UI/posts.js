@@ -231,7 +231,7 @@ function getPhotoPosts(filterConfig, skip = 0, top = 10){
         top = 10;
     }
     if(skip + top >= photoPosts.length){
-        top = photoPosts.size() - skip;
+        top = photoPosts.length - skip;
     }
     if(filterConfig.createdAt == undefined ||
         filterConfig.author === undefined ||
