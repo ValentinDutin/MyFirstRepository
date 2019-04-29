@@ -197,10 +197,7 @@ function compareByDate(first, second){
 function getPhotoPosts(skip){
     return getPhotoPosts(skip, 10);
 }
-function getPhotoPosts(){
-    alert("It works");
-    return getPhotoPosts(0, 10);
-}
+
 function getPhotoPost(id){
     photoPosts.sort(compareByDate);
     photoPosts.foreach(function(item){
@@ -210,7 +207,7 @@ function getPhotoPost(id){
     });
 }
 
-function getPhotoPosts(skip, top){
+function getPhotoPosts(skip = 0, top = 10){
     if(skip < 0){
         skip = 0;
     }
@@ -226,7 +223,7 @@ function getPhotoPosts(skip, top){
     return resultArr.slice(skip, top + skip);
 }
 
-function getPhotoPosts(skip, top, filterConfig){
+function getPhotoPosts(filterConfig, skip = 0, top = 10){
     if(skip < 0){
         skip = 0;
     }

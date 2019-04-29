@@ -29,6 +29,10 @@ class Post{
         return true;
     }
 
+    getID(){
+        return this._id;
+    }
+    get
 }
 
 
