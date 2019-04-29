@@ -6,6 +6,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "2",
@@ -14,6 +15,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "3",
@@ -22,6 +24,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "4",
@@ -30,6 +33,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "5",
@@ -38,6 +42,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "6",
@@ -46,6 +51,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "7",
@@ -54,6 +60,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "8",
@@ -62,6 +69,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "9",
@@ -70,6 +78,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "10",
@@ -78,6 +87,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "11",
@@ -86,6 +96,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "12",
@@ -94,6 +105,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "13",
@@ -102,6 +114,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "14",
@@ -110,6 +123,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "15",
@@ -118,6 +132,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "16",
@@ -126,6 +141,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "17",
@@ -134,6 +150,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "18",
@@ -142,6 +159,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "19",
@@ -150,6 +168,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
     {
         id: "20",
@@ -158,6 +177,7 @@ var photoPosts = [
         author: "valentin_dutin",
         photoLink: "https://pp.userapi.com/c854220/v854220904/2973e/lWxDJEnXnr8.jpg",
         hashtag: ["summer", "minsk", "belinsta"],
+        likes: ["sidorov", "ivanov", "dasha", "pasha"],
     },
 
 ];
@@ -271,7 +291,6 @@ function editPhotoPost(id, photoPost){
         post.photoLink = photoPost.photoLink;
     }
     if(photoPost.likes != null){
-
         post.likes = photoPost.likes;
     }
     if(photoPost.hashtag != null){
