@@ -1,4 +1,5 @@
 class Post{
+
     constructor (id, description, createdAt, author, photoLink, likes, hashtags) {
         this._id = id;
         this._description = description;
@@ -58,8 +59,6 @@ class Post{
 
 
 
-
-
 class PostCollection {
     constructor(posts){
         _photoPosts = [];
@@ -73,6 +72,21 @@ class PostCollection {
     static validate(photoPost){
         return (photoPost instanceof Post) && photoPost.validate();
     }
+    _compareByDate(first, second){
+        if(first.createdAt > second.createdAt){
+            return -1;
+        }
+        else if(first.createdAt > second.createdAt){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+
+    getLength(){
+        return this._photoPosts.length;
+    }
 
     getPage(filterConfig, skip = 0; top = 10){
         if(skip < 0){
@@ -84,20 +98,22 @@ class PostCollection {
         if(skip + top >= this._photoPosts.length){
             top = this._photoPosts.length - skip;
         }
-        if(filterConfig.createdAt == undefined ||
-            filterConfig.author === undefined ||
-            filterConfig.hashtag === undefined){
+        if(filterConfig._createdAt == undefined ||
+            filterConfig._author === undefined ||
+            filterConfig._hashtag === undefined){
             return null;
         }
         resultArr = [];
-        photoPosts.sort(compareByDate);
-        photoPosts.foreach(function(item){
-            if(item.createdAt == filterConfig.createdAt ||
-            item.author == filterConfig.author){
+        tmpArr = [];
+        tmpArr = this._photoPosts;
+        tmpArr.sort(this._compareByDate);
+        tmpArr.foreach(function(item){
+            if(item.getCreatedAt == filterConfig._createdAt ||
+            item.getAuthor == filterConfig._author){
                 resultArr.push(item);
             }
-            for(i = 0; i < item.hashtag.length; k++){
-                if(item.hashtag[i] == filterConfig.hashtag){
+            for(i = 0; i < item._hashtags.length; k++){
+                if(item.getHashtags[i] == filterConfig._hashtags){
                     resultArr.push(item);
                     break;
                 }
@@ -106,6 +122,66 @@ class PostCollection {
         return resultArr.slice(skip, top + skip);
     }
 
+    get(id){
+    this._photoPosts.foreach(item => {
+        if(item.getID == id){
+            return item;
+        }
+    });
+    return null;
+    }
 
+    add(photoPost){
+        if(photoPost.validate()){
+            this._photoPosts.push(photoPost);
+            return true;
+        }
+        return false;
+    }
 
+    edit(id, photoPost){
+        post = get(id);
+        if(post == null){
+            return false;
+        }
+        if(photoPost._descriprion != null ||
+        photoPost._descriprion.length < 200){
+            post._descriprion = photoPost._descriprion;
+        }
+        if(photoPost._photoLink != null){
+            post._photoLink = photoPost._photoLink;
+        }
+        if(photoPost._likes != null){
+            post._likes = photoPost._likes;
+        }
+        if(photoPost._hashtag != null){
+            post._hashtag = photoPost._hashtag;
+        }
+        return true;
+    }
+
+    remove(id){
+        for(i = 0;i < this._photoPosts.length; i++){
+            if(this._photoPosts[i].getID() == id){
+                this._photoPosts.splice(i, 1);
+            }
+        }
+    }
+
+    addAll(posts){
+        if(posts == null){
+            return null;
+        }
+        else{
+            posts.foreach(item => {
+                if(item.validate){
+                    this._photoPosts.push(item);
+                }
+            });
+        }
+    }
+
+    clear(){
+        this._photoPosts.splice(0, this._photoPosts.length);
+    }
 }
