@@ -1,0 +1,1 @@
+select * from photopost where user_id=22218 and creation_date like '2019-05-01%';
